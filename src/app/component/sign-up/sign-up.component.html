@@ -1,0 +1,65 @@
+<div >
+    <form>
+      <div class="text-center mb-3">
+        <p>Sign up with:</p>
+        <button type="button" class="btn btn-link btn-floating mx-1">
+          <i class="fab fa-facebook-f"></i>
+        </button>
+
+        <button type="button" class="btn btn-link btn-floating mx-1">
+          <i class="fab fa-google"></i>
+        </button>
+
+        <button type="button" class="btn btn-link btn-floating mx-1">
+          <i class="fab fa-twitter"></i>
+        </button>
+
+        <button type="button" class="btn btn-link btn-floating mx-1">
+          <i class="fab fa-github"></i>
+        </button>
+      </div>
+
+      <p class="text-center">or:</p>
+
+      <!-- Name input -->
+      <div class="form-floating mb-4">
+        <input placeholder="###@..." 
+        type="text" id="floatingInput" 
+        class="form-control" 
+        [(ngModel)]="signUpData.email" 
+        name="email"/>
+        <label for="floatingInput">Email</label>
+      </div>
+
+      <!-- Username input -->
+      <div class="form-floating mb-4">
+        <input type="text" id="registerUsername" class="form-control" [(ngModel)]="signUpData.userName" 
+        name="userName"/>
+        <label class="form-label" for="registerUsername">UserName</label>
+      </div>
+
+      <!-- Email input -->
+      <div class="form-floating mb-4">
+        <input type="text" id="registerFullName" class="form-control" [(ngModel)]="signUpData.fullName" 
+        name="fullName"/>
+        <label class="form-label" for="registerFullName">FullName</label>
+      </div>
+
+      <!-- Password input -->
+      <div class="form-floating mb-4">
+        <input type="text" id="registerPhoneNumber" class="form-control" [(ngModel)]="signUpData.phoneNumber" 
+        name="phoneNumber"/>
+        <label class="form-label" for="registerPhoneNumber">PhoneNumber</label>
+      </div>
+
+      <!-- Password input -->
+      <div class="form-floating mb-4">
+        <input type="password" id="registerPassword" class="form-control" [(ngModel)]="signUpData.password" 
+        name="password"/>
+        <label class="form-label" for="registerPassword">Password</label>
+      </div>
+
+      <!-- Submit button -->
+      <button type="submit" class="btn btn-primary btn-block mb-3" (click)="onSubmit()">Sign Up</button>
+    </form>
+  </div>

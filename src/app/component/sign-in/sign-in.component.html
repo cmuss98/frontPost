@@ -1,0 +1,21 @@
+<form>
+    <!-- Email input -->
+    <div class="form-outline mb-4">
+      <input type="text" id="loginEmail" class="form-control" 
+      [(ngModel)]="signInData.email" name="email"/>
+      <label class="form-label" for="loginEmail">Email address</label>
+    </div>
+  
+    <!-- Password input -->
+    <div class="form-outline mb-4">
+      <input type="password" id="loginPassword" class="form-control" 
+      [(ngModel)]="signInData.password" name="password"/>
+      <label class="form-label" for="loginPassword">Password</label>
+    </div>
+  
+
+  
+    <!-- Submit button -->
+    <button type="button" class="btn btn-primary btn-block mb-4" (click)="onSignIn()">Sign in</button>
+  
+  </form>

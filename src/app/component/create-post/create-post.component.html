@@ -1,0 +1,28 @@
+<form>
+  <!-- Title input -->
+  <div class="form-outline mb-4">
+    <input type="text" id="createTitle" class="form-control" [(ngModel)]="postData.title" name="title"/>
+    <label class="form-label" for="createTitle">Title</label>
+  </div>
+
+  <!-- Imagem input -->
+  <div class="form-outline mb-4">
+    <input type="text" id="createImage" class="form-control" 
+    [(ngModel)]="postData.image" name="image"/>
+    <label class="form-label" for="createImage">Image</label>
+  </div>
+  <!-- Content input -->
+  <div class="form-outline mb-4">
+    <label class="form-label" for="createContent">Content</label>
+    <textarea  class="form-control" 
+    [(ngModel)]="postData.content" name="content">
+    </textarea>
+    
+  </div>
+
+
+
+  <!-- Submit button -->
+  <button type="button" class="btn btn-primary btn-block mb-4" (click)="onSubmit()">Acessar</button>
+
+</form>
